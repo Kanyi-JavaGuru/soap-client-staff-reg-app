@@ -1,0 +1,359 @@
+INFO  - 2018-10-11 14:37:27 - Starting CellulantStaffRegApplication on localhost.localdomain with PID 13640 (/home/kevin/eclipse-workspace/cellulant_staff_reg/target/classes started by kevin in /home/kevin/eclipse-workspace/cellulant_staff_reg)
+INFO  - 2018-10-11 14:37:27 - No active profile set, falling back to default profiles: default
+INFO  - 2018-10-11 14:37:27 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7fa98a66: startup date [Thu Oct 11 14:37:27 EAT 2018]; root of context hierarchy
+INFO  - 2018-10-11 14:37:27 - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$74052615] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+INFO  - 2018-10-11 14:37:27 - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+INFO  - 2018-10-11 14:37:27 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cf6d6116] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+INFO  - 2018-10-11 14:37:28 - Tomcat initialized with port(s): 8080 (http)
+INFO  - 2018-10-11 14:37:28 - Starting service [Tomcat]
+INFO  - 2018-10-11 14:37:28 - Starting Servlet Engine: Apache Tomcat/8.5.34
+INFO  - 2018-10-11 14:37:28 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+INFO  - 2018-10-11 14:37:28 - Initializing Spring embedded WebApplicationContext
+INFO  - 2018-10-11 14:37:28 - Root WebApplicationContext: initialization completed in 994 ms
+INFO  - 2018-10-11 14:37:28 - Servlet dispatcherServlet mapped to [/]
+INFO  - 2018-10-11 14:37:28 - Servlet messageDispatcherServlet mapped to [/services/*]
+INFO  - 2018-10-11 14:37:28 - Mapping filter: 'characterEncodingFilter' to: [/*]
+INFO  - 2018-10-11 14:37:28 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+INFO  - 2018-10-11 14:37:28 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+INFO  - 2018-10-11 14:37:28 - Mapping filter: 'requestContextFilter' to: [/*]
+INFO  - 2018-10-11 14:37:28 - HikariPool-1 - Starting...
+INFO  - 2018-10-11 14:37:28 - HikariPool-1 - Start completed.
+INFO  - 2018-10-11 14:37:28 - Building JPA container EntityManagerFactory for persistence unit 'default'
+INFO  - 2018-10-11 14:37:28 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+INFO  - 2018-10-11 14:37:28 - HHH000412: Hibernate Core {5.2.17.Final}
+INFO  - 2018-10-11 14:37:28 - HHH000206: hibernate.properties not found
+INFO  - 2018-10-11 14:37:28 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+INFO  - 2018-10-11 14:37:28 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+INFO  - 2018-10-11 14:37:29 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+INFO  - 2018-10-11 14:37:29 - Creating JAXBContext with context path [com.cellulant.model]
+INFO  - 2018-10-11 14:37:29 - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+INFO  - 2018-10-11 14:37:29 - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+INFO  - 2018-10-11 14:37:29 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+INFO  - 2018-10-11 14:37:29 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7fa98a66: startup date [Thu Oct 11 14:37:27 EAT 2018]; root of context hierarchy
+WARN  - 2018-10-11 14:37:29 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+INFO  - 2018-10-11 14:37:29 - Mapped "{[/departments],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.cellulant.controllers.DepartmentController.findAll()
+INFO  - 2018-10-11 14:37:29 - Mapped "{[/staff/department/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.cellulant.controllers.StaffController.findAll(java.lang.Long)
+INFO  - 2018-10-11 14:37:29 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+INFO  - 2018-10-11 14:37:29 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+INFO  - 2018-10-11 14:37:29 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+INFO  - 2018-10-11 14:37:29 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+INFO  - 2018-10-11 14:37:30 - Registering beans for JMX exposure on startup
+INFO  - 2018-10-11 14:37:30 - Bean with name 'dataSource' has been autodetected for JMX exposure
+INFO  - 2018-10-11 14:37:30 - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+INFO  - 2018-10-11 14:37:30 - Tomcat started on port(s): 8080 (http) with context path ''
+INFO  - 2018-10-11 14:37:30 - Started CellulantStaffRegApplication in 3.021 seconds (JVM running for 3.361)
+INFO  - 2018-10-11 14:44:56 - Application shutdown requested.
+INFO  - 2018-10-11 14:44:56 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7fa98a66: startup date [Thu Oct 11 14:37:27 EAT 2018]; root of context hierarchy
+INFO  - 2018-10-11 14:44:56 - Unregistering JMX-exposed beans on shutdown
+INFO  - 2018-10-11 14:44:56 - Unregistering JMX-exposed beans
+INFO  - 2018-10-11 14:44:56 - Closing JPA EntityManagerFactory for persistence unit 'default'
+INFO  - 2018-10-11 14:44:56 - HikariPool-1 - Shutdown initiated...
+INFO  - 2018-10-11 14:44:56 - HikariPool-1 - Shutdown completed.
+INFO  - 2018-10-11 14:45:06 - Starting CellulantStaffRegApplication on localhost.localdomain with PID 14039 (/home/kevin/eclipse-workspace/cellulant_staff_reg/target/classes started by kevin in /home/kevin/eclipse-workspace/cellulant_staff_reg)
+INFO  - 2018-10-11 14:45:06 - No active profile set, falling back to default profiles: default
+INFO  - 2018-10-11 14:45:06 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@59fd97a8: startup date [Thu Oct 11 14:45:06 EAT 2018]; root of context hierarchy
+INFO  - 2018-10-11 14:45:07 - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$8b69c279] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+INFO  - 2018-10-11 14:45:07 - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+INFO  - 2018-10-11 14:45:07 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e6d1fd7a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+INFO  - 2018-10-11 14:45:07 - Tomcat initialized with port(s): 8080 (http)
+INFO  - 2018-10-11 14:45:07 - Starting service [Tomcat]
+INFO  - 2018-10-11 14:45:07 - Starting Servlet Engine: Apache Tomcat/8.5.34
+INFO  - 2018-10-11 14:45:07 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+INFO  - 2018-10-11 14:45:07 - Initializing Spring embedded WebApplicationContext
+INFO  - 2018-10-11 14:45:07 - Root WebApplicationContext: initialization completed in 1081 ms
+INFO  - 2018-10-11 14:45:07 - Servlet dispatcherServlet mapped to [/]
+INFO  - 2018-10-11 14:45:07 - Servlet messageDispatcherServlet mapped to [/services/*]
+INFO  - 2018-10-11 14:45:07 - Mapping filter: 'characterEncodingFilter' to: [/*]
+INFO  - 2018-10-11 14:45:07 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+INFO  - 2018-10-11 14:45:07 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+INFO  - 2018-10-11 14:45:07 - Mapping filter: 'requestContextFilter' to: [/*]
+INFO  - 2018-10-11 14:45:07 - HikariPool-1 - Starting...
+INFO  - 2018-10-11 14:45:08 - HikariPool-1 - Start completed.
+INFO  - 2018-10-11 14:45:08 - Building JPA container EntityManagerFactory for persistence unit 'default'
+INFO  - 2018-10-11 14:45:08 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+INFO  - 2018-10-11 14:45:08 - HHH000412: Hibernate Core {5.2.17.Final}
+INFO  - 2018-10-11 14:45:08 - HHH000206: hibernate.properties not found
+INFO  - 2018-10-11 14:45:08 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+INFO  - 2018-10-11 14:45:08 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+INFO  - 2018-10-11 14:45:08 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+INFO  - 2018-10-11 14:45:08 - Creating JAXBContext with context path [com.cellulant.model]
+INFO  - 2018-10-11 14:45:08 - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+INFO  - 2018-10-11 14:45:08 - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+INFO  - 2018-10-11 14:45:08 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+INFO  - 2018-10-11 14:45:09 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@59fd97a8: startup date [Thu Oct 11 14:45:06 EAT 2018]; root of context hierarchy
+WARN  - 2018-10-11 14:45:09 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+INFO  - 2018-10-11 14:45:09 - Mapped "{[/departments],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.cellulant.controllers.DepartmentController.findAll()
+INFO  - 2018-10-11 14:45:09 - Mapped "{[/staff/department/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.cellulant.controllers.StaffController.findAll(java.lang.Long)
+INFO  - 2018-10-11 14:45:09 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+INFO  - 2018-10-11 14:45:09 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+INFO  - 2018-10-11 14:45:09 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+INFO  - 2018-10-11 14:45:09 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+INFO  - 2018-10-11 14:45:09 - Registering beans for JMX exposure on startup
+INFO  - 2018-10-11 14:45:09 - Bean with name 'dataSource' has been autodetected for JMX exposure
+INFO  - 2018-10-11 14:45:09 - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+INFO  - 2018-10-11 14:45:09 - Tomcat started on port(s): 8080 (http) with context path ''
+INFO  - 2018-10-11 14:45:09 - Started CellulantStaffRegApplication in 3.105 seconds (JVM running for 3.42)
+INFO  - 2018-10-11 14:45:20 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+INFO  - 2018-10-11 14:45:20 - FrameworkServlet 'dispatcherServlet': initialization started
+INFO  - 2018-10-11 14:45:20 - FrameworkServlet 'dispatcherServlet': initialization completed in 9 ms
+INFO  - 2018-10-11 14:45:20 - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+ERROR - 2018-10-11 14:45:20 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: No marshaller registered. Check configuration of WebServiceTemplate.] with root cause
+java.lang.IllegalStateException: No marshaller registered. Check configuration of WebServiceTemplate.
+	at org.springframework.ws.client.core.WebServiceTemplate$2.doWithMessage(WebServiceTemplate.java:396)
+	at org.springframework.ws.client.core.WebServiceTemplate.doSendAndReceive(WebServiceTemplate.java:590)
+	at org.springframework.ws.client.core.WebServiceTemplate.sendAndReceive(WebServiceTemplate.java:555)
+	at org.springframework.ws.client.core.WebServiceTemplate.marshalSendAndReceive(WebServiceTemplate.java:390)
+	at com.cellulant.endpoints.StaffGateway.getDepartments(StaffGateway.java:14)
+	at com.cellulant.controllers.StaffController.findAll(StaffController.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+INFO  - 2018-10-11 14:46:37 - Application shutdown requested.
+INFO  - 2018-10-11 14:46:37 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@59fd97a8: startup date [Thu Oct 11 14:45:06 EAT 2018]; root of context hierarchy
+INFO  - 2018-10-11 14:46:37 - Unregistering JMX-exposed beans on shutdown
+INFO  - 2018-10-11 14:46:37 - Unregistering JMX-exposed beans
+INFO  - 2018-10-11 14:46:37 - Closing JPA EntityManagerFactory for persistence unit 'default'
+INFO  - 2018-10-11 14:46:37 - HikariPool-1 - Shutdown initiated...
+INFO  - 2018-10-11 14:46:37 - HikariPool-1 - Shutdown completed.
+INFO  - 2018-10-11 14:47:35 - Starting CellulantStaffRegApplication on localhost.localdomain with PID 14221 (/home/kevin/eclipse-workspace/cellulant_staff_reg/target/classes started by kevin in /home/kevin/eclipse-workspace/cellulant_staff_reg)
+INFO  - 2018-10-11 14:47:35 - No active profile set, falling back to default profiles: default
+INFO  - 2018-10-11 14:47:35 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@402bba4f: startup date [Thu Oct 11 14:47:35 EAT 2018]; root of context hierarchy
+INFO  - 2018-10-11 14:47:35 - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$9ba2e155] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+INFO  - 2018-10-11 14:47:35 - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+INFO  - 2018-10-11 14:47:35 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f70b1c56] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+INFO  - 2018-10-11 14:47:36 - Tomcat initialized with port(s): 8080 (http)
+INFO  - 2018-10-11 14:47:36 - Starting service [Tomcat]
+INFO  - 2018-10-11 14:47:36 - Starting Servlet Engine: Apache Tomcat/8.5.34
+INFO  - 2018-10-11 14:47:36 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+INFO  - 2018-10-11 14:47:36 - Initializing Spring embedded WebApplicationContext
+INFO  - 2018-10-11 14:47:36 - Root WebApplicationContext: initialization completed in 1107 ms
+INFO  - 2018-10-11 14:47:36 - Servlet dispatcherServlet mapped to [/]
+INFO  - 2018-10-11 14:47:36 - Servlet messageDispatcherServlet mapped to [/services/*]
+INFO  - 2018-10-11 14:47:36 - Mapping filter: 'characterEncodingFilter' to: [/*]
+INFO  - 2018-10-11 14:47:36 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+INFO  - 2018-10-11 14:47:36 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+INFO  - 2018-10-11 14:47:36 - Mapping filter: 'requestContextFilter' to: [/*]
+INFO  - 2018-10-11 14:47:36 - HikariPool-1 - Starting...
+INFO  - 2018-10-11 14:47:36 - HikariPool-1 - Start completed.
+INFO  - 2018-10-11 14:47:36 - Building JPA container EntityManagerFactory for persistence unit 'default'
+INFO  - 2018-10-11 14:47:36 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+INFO  - 2018-10-11 14:47:36 - HHH000412: Hibernate Core {5.2.17.Final}
+INFO  - 2018-10-11 14:47:36 - HHH000206: hibernate.properties not found
+INFO  - 2018-10-11 14:47:36 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+INFO  - 2018-10-11 14:47:36 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+INFO  - 2018-10-11 14:47:37 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+INFO  - 2018-10-11 14:47:37 - Creating JAXBContext with context path [com.cellulant.model]
+INFO  - 2018-10-11 14:47:37 - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+INFO  - 2018-10-11 14:47:37 - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+INFO  - 2018-10-11 14:47:37 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+INFO  - 2018-10-11 14:47:37 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@402bba4f: startup date [Thu Oct 11 14:47:35 EAT 2018]; root of context hierarchy
+WARN  - 2018-10-11 14:47:37 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+INFO  - 2018-10-11 14:47:37 - Mapped "{[/departments],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.cellulant.controllers.DepartmentController.findAll()
+INFO  - 2018-10-11 14:47:37 - Mapped "{[/staff/department/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.cellulant.controllers.StaffController.findAll(java.lang.Long)
+INFO  - 2018-10-11 14:47:37 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+INFO  - 2018-10-11 14:47:37 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+INFO  - 2018-10-11 14:47:37 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+INFO  - 2018-10-11 14:47:37 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+INFO  - 2018-10-11 14:47:38 - Registering beans for JMX exposure on startup
+INFO  - 2018-10-11 14:47:38 - Bean with name 'dataSource' has been autodetected for JMX exposure
+INFO  - 2018-10-11 14:47:38 - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+INFO  - 2018-10-11 14:47:38 - Tomcat started on port(s): 8080 (http) with context path ''
+INFO  - 2018-10-11 14:47:38 - Started CellulantStaffRegApplication in 3.191 seconds (JVM running for 3.545)
+INFO  - 2018-10-11 14:47:49 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+INFO  - 2018-10-11 14:47:49 - FrameworkServlet 'dispatcherServlet': initialization started
+INFO  - 2018-10-11 14:47:49 - FrameworkServlet 'dispatcherServlet': initialization completed in 9 ms
+INFO  - 2018-10-11 14:47:49 - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+ERROR - 2018-10-11 14:47:49 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: No marshaller registered. Check configuration of WebServiceTemplate.] with root cause
+java.lang.IllegalStateException: No marshaller registered. Check configuration of WebServiceTemplate.
+	at org.springframework.ws.client.core.WebServiceTemplate$2.doWithMessage(WebServiceTemplate.java:396)
+	at org.springframework.ws.client.core.WebServiceTemplate.doSendAndReceive(WebServiceTemplate.java:590)
+	at org.springframework.ws.client.core.WebServiceTemplate.sendAndReceive(WebServiceTemplate.java:555)
+	at org.springframework.ws.client.core.WebServiceTemplate.marshalSendAndReceive(WebServiceTemplate.java:390)
+	at com.cellulant.endpoints.StaffGateway.getDepartments(StaffGateway.java:14)
+	at com.cellulant.controllers.StaffController.findAll(StaffController.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+INFO  - 2018-10-11 14:52:17 - Starting CellulantStaffRegApplicationTests on localhost.localdomain with PID 14446 (started by kevin in /home/kevin/eclipse-workspace/cellulant_staff_reg)
+INFO  - 2018-10-11 14:52:17 - No active profile set, falling back to default profiles: default
+INFO  - 2018-10-11 14:52:18 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7975d1d8: startup date [Thu Oct 11 14:52:18 EAT 2018]; root of context hierarchy
+INFO  - 2018-10-11 14:52:19 - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$e00837c5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+INFO  - 2018-10-11 14:52:19 - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+INFO  - 2018-10-11 14:52:19 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3b7072c6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+INFO  - 2018-10-11 14:52:19 - HikariPool-1 - Starting...
+INFO  - 2018-10-11 14:52:19 - HikariPool-1 - Start completed.
+INFO  - 2018-10-11 14:52:19 - Building JPA container EntityManagerFactory for persistence unit 'default'
+INFO  - 2018-10-11 14:52:19 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+INFO  - 2018-10-11 14:52:19 - HHH000412: Hibernate Core {5.2.17.Final}
+INFO  - 2018-10-11 14:52:19 - HHH000206: hibernate.properties not found
+INFO  - 2018-10-11 14:52:20 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+INFO  - 2018-10-11 14:52:20 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+INFO  - 2018-10-11 14:52:20 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+INFO  - 2018-10-11 14:52:20 - Creating JAXBContext with context path [com.cellulant.model]
+INFO  - 2018-10-11 14:52:21 - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+INFO  - 2018-10-11 14:52:21 - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+INFO  - 2018-10-11 14:52:21 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+INFO  - 2018-10-11 14:52:21 - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7975d1d8: startup date [Thu Oct 11 14:52:18 EAT 2018]; root of context hierarchy
+WARN  - 2018-10-11 14:52:21 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+INFO  - 2018-10-11 14:52:21 - Mapped "{[/departments],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.cellulant.controllers.DepartmentController.findAll()
+INFO  - 2018-10-11 14:52:21 - Mapped "{[/staff/department/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.cellulant.controllers.StaffController.findAll(java.lang.Long)
+INFO  - 2018-10-11 14:52:21 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+INFO  - 2018-10-11 14:52:21 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+INFO  - 2018-10-11 14:52:21 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+INFO  - 2018-10-11 14:52:21 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+INFO  - 2018-10-11 14:52:22 - Started CellulantStaffRegApplicationTests in 4.307 seconds (JVM running for 4.928)
+INFO  - 2018-10-11 14:52:22 - Closing org.springframework.web.context.support.GenericWebApplicationContext@7975d1d8: startup date [Thu Oct 11 14:52:18 EAT 2018]; root of context hierarchy
+INFO  - 2018-10-11 14:52:22 - Closing JPA EntityManagerFactory for persistence unit 'default'
+INFO  - 2018-10-11 14:52:22 - HikariPool-1 - Shutdown initiated...
+INFO  - 2018-10-11 14:52:22 - HikariPool-1 - Shutdown completed.
+INFO  - 2018-10-11 15:03:24 - Application shutdown requested.
+INFO  - 2018-10-11 15:03:24 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@402bba4f: startup date [Thu Oct 11 14:47:35 EAT 2018]; root of context hierarchy
+INFO  - 2018-10-11 15:03:24 - Unregistering JMX-exposed beans on shutdown
+INFO  - 2018-10-11 15:03:24 - Unregistering JMX-exposed beans
+INFO  - 2018-10-11 15:03:24 - Closing JPA EntityManagerFactory for persistence unit 'default'
+INFO  - 2018-10-11 15:03:24 - HikariPool-1 - Shutdown initiated...
+INFO  - 2018-10-11 15:03:24 - HikariPool-1 - Shutdown completed.
+INFO  - 2018-10-11 15:14:20 - Starting CellulantStaffRegApplicationTests on localhost.localdomain with PID 15391 (started by kevin in /home/kevin/eclipse-workspace/cellulant_staff_reg)
+INFO  - 2018-10-11 15:14:20 - No active profile set, falling back to default profiles: default
+INFO  - 2018-10-11 15:14:20 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7975d1d8: startup date [Thu Oct 11 15:14:20 EAT 2018]; root of context hierarchy
+INFO  - 2018-10-11 15:14:21 - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$5608c893] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+INFO  - 2018-10-11 15:14:21 - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+INFO  - 2018-10-11 15:14:21 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b1710394] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+INFO  - 2018-10-11 15:14:22 - HikariPool-1 - Starting...
+INFO  - 2018-10-11 15:14:22 - HikariPool-1 - Start completed.
+INFO  - 2018-10-11 15:14:22 - Building JPA container EntityManagerFactory for persistence unit 'default'
+INFO  - 2018-10-11 15:14:22 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+INFO  - 2018-10-11 15:14:22 - HHH000412: Hibernate Core {5.2.17.Final}
+INFO  - 2018-10-11 15:14:22 - HHH000206: hibernate.properties not found
+INFO  - 2018-10-11 15:14:22 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+INFO  - 2018-10-11 15:14:22 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+INFO  - 2018-10-11 15:14:23 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+INFO  - 2018-10-11 15:14:23 - Creating JAXBContext with context path [com.cellulant.model]
+INFO  - 2018-10-11 15:14:23 - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+INFO  - 2018-10-11 15:14:23 - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+INFO  - 2018-10-11 15:14:23 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+INFO  - 2018-10-11 15:14:24 - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7975d1d8: startup date [Thu Oct 11 15:14:20 EAT 2018]; root of context hierarchy
+WARN  - 2018-10-11 15:14:24 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+INFO  - 2018-10-11 15:14:24 - Mapped "{[/departments],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.cellulant.controllers.DepartmentController.findAll()
+INFO  - 2018-10-11 15:14:24 - Mapped "{[/staff/department/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.cellulant.controllers.StaffController.findAll(java.lang.Long)
+INFO  - 2018-10-11 15:14:24 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+INFO  - 2018-10-11 15:14:24 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+INFO  - 2018-10-11 15:14:24 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+INFO  - 2018-10-11 15:14:24 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+INFO  - 2018-10-11 15:14:24 - Started CellulantStaffRegApplicationTests in 4.272 seconds (JVM running for 4.913)
+INFO  - 2018-10-11 15:14:24 - Closing org.springframework.web.context.support.GenericWebApplicationContext@7975d1d8: startup date [Thu Oct 11 15:14:20 EAT 2018]; root of context hierarchy
+INFO  - 2018-10-11 15:14:24 - Closing JPA EntityManagerFactory for persistence unit 'default'
+INFO  - 2018-10-11 15:14:24 - HikariPool-1 - Shutdown initiated...
+INFO  - 2018-10-11 15:14:24 - HikariPool-1 - Shutdown completed.
